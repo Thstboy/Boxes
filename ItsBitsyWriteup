@@ -1,0 +1,30 @@
+					Connect with the lab
+
+
+1. How many events were returned for the month of March 2022?
+
+	-Scan from the first of march to 31st
+
+2. What is the IP associated with the suspected user in the logs? 
+
+	-Go to user_agent you'll see a clear classification (firefox and itsbitsy) visualize both using lens
+
+3. The user’s machine used a legit windows binary to download a file from the C2 server. What is the name of the binary?
+
+	-The visualization consists of two entities (Firefox and Itsbitsy), Itsbitsy seems off because its the title of the box, select the fraction for Itsbitsy, then visualize it in a tabular format. Drag the source ip filter from the filter section, this should give your second answer.
+
+4. The infected machine connected with a famous filesharing site in this period, which also acts as a C2 server used by the malware authors to communicate. What is the name of the filesharing site?
+
+	-Dragging / adding the host filter to the table should give the answer to the third and fourth question, under the colums top values of user agent and top values of host.  
+
+5. What is the full URL of the C2 to which the infected host is connected?
+
+	-Select the url filter to get the full url of the C2 for the fifth question
+
+6. A file was accessed on the filesharing site. What is the name of the file accessed?
+
+	-To get the name of the file, go the domain pastebin.com/yTg0Ah6a
+
+7. The file contains a secret code with the format THM{_____}.
+
+-Acces the site pastebin.com/yTg0Ah6a to get the flag
